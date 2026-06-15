@@ -1,0 +1,14 @@
+En las clases que tuvimos creamos un entorno virtual, instalamos ahí fastapi standard, escribíamos el app.py (o main.py) y ya lo podíamos levantar para que funcione.
+
+En esta tarea les pido que hagan todo este proceso y me entreguen un .zip con toda la carpeta del proyecto.
+¿qué tiene que tener?: 
+Un entorno virtual con fastapi[standard] y/o un requirements.txt*
+un main o app.py con 4 path operations (o "vistas"); cada una con uno de los métodos http que vimos (get, post, put y delete). Pueden contener y retornar cualquier cosa mientras se usen los métodos correctos.
+
+Me lo pueden compartir también, si se animan, a través de github compartiéndome el enlace del repositorio.
+
+*REQUIREMENTS.TXT:
+Cuando estén dentro del entorno virtual, corran:
+pip freeze > requirements.txt
+
+Este comando les guarda una lista con los paquetes y sus respectivas versiones que tengan instalados en el entorno virtual. Lo veremos en más profundidad la próxima clase.

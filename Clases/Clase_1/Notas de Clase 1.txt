@@ -1,0 +1,29 @@
+Notas de Clase 1:
+
+*Objetivos: - Instalar el framework web "fastapi".
+	    - Crear "Hola Mundo"
+*Aclaración: Se realiza este procedimiento para no tener inconvenientes con las versiones de las cosas que instalemos, en este caso "fastapi". Ya que si instalo sin crear el entorno virtual se instalaria en toda la computadora y con un proyecto que tenga una version distinta podria generar problemas. De esta forma cada proyecto tiene su version y no genera problemas con otros.
+
+*Adicional: comando "code ." -> Abre Visual Studio Code en la carpeta que me encuentre parado en ese momento en la consola.
+
+*Pasos a seguir:
+ Objetivo 1:
+	Mediante la consola creamos un entorno virtual (Venv) con el codigo: "python3 -m venv venv".Si sale un error colocar el comando que dice el error y dar Enter! Si el error persiste colocar "sudo" mas el comando que nos otrogo primero luego ya puedo colocar el comando "python3 -m venv venv" nuevamente.
+	En mi caso el comando que me largaba el error es: "apt install python3.13-venv". Al intentar tocando enter me dio error por lo que le agregue la palabra "Sudo" y me quedo lo siguiente: "sudo apt install python3.13-venv". Una vez que se creo el entorno virtual debo acceder mediante el comando: "source venv/bin/activate". Al ingresr me deberia saltar algo asi: "(venv) facu@facu:~/Documentos/Itec_2026/PP1_py/Clase_1_API$".
+	Una vez dentro de Venv debo instalar fastapi y lo realizo con el comando: "pip install fastapi[standard]"
+ 
+ Objetivo 2:
+	Luego de esto accedo a visual studio code y en el mismo a la misma altura de la carpeta venv (no dentro) creo un archivo .py llamado app.py dentro de este coloco el siguiente codigo:
+	"from fastapi import FastAPI
+
+	app = FastAPI()
+
+	@app.get("/")
+	async def saludar():
+	    return {"Hola": "¡Hola, Mundo!"}"
+
+	Luego dentro dentro de la terminal coloco:
+	"fastapi dev"
+	Al ejecutar esto me dará una dirección ip con un puerto si realizo clic mientras presiono ctr me abrira la direccion ip en la web. Donde veré el Hola Mundo.
+
+FIN.

@@ -1,0 +1,9 @@
+Luego de instalar FastAPI y hacer nuestro primer hola mundo, aprendimos a cómo manejar datos (operaciones CRUD) con las herramientas que nos brinda FastAPI.
+
+Para este segundo práctico la idea es que me entreguen:
+Una aplicación nueva y funcional de FastAPI que incluya:
+ - Un requirements que refleje la instalación de fastapi[standard]
+ - Un main o app.py con:
+ -  - Una lista de diccionarios (con el fin de simular una tabla en una base de datos). Temática libre (excepto supermercado y ferretería).
+ -  - 5 path operations: 2 de tipo GET, 1 POST, 1 PUT y 1 DELETE. Estos path operations deben modificar u obtener de la lista según su método.
+ -  - En los path operations se deben usar los métodos Body(), Path() o Query() según corresponda. Deben incluir al menos una validación relevante para su tipo.
