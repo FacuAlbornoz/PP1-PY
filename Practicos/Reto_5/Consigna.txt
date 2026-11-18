@@ -1,0 +1,10 @@
+En el práctico anterior integramos una base de datos a nuestra api con SQLAlchemy. Ahora vamos a actualizar a SQLModel e implementar Alembic para migraciones de DB.
+
+Les pido:
+- Dejar de utilizar SQLAlchemy para implementar únicamente SQLModel.
+- Utilizar Alembic para migraciones de DB, con al menos 1 migración inicial.
+- Incluir al menos 2 modelos, donde se guarde una relación tipo Foreign Key
+- Incluir clases de SQLModel (schemas) para datos anidados.
+Este trabajo PUEDE ser realizado de a dos integrantes.
+Pueden trabajar a partir de lo que entregaron en el práctico 4, sumandole todas estas features.
+La entrega será preferentemente por Github, en la medida de lo posible. Se usarán las horas de hoy (jueves) para realizar este práctico. Éxitos!!
